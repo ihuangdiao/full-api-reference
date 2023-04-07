@@ -4,11 +4,11 @@ iOS SDK Full API Reference
 
 # ThinkingAnalyticsSDK
 
-## + (ThinkingAnalyticsSDK * )startWithAppId:(NSString * )appId withUrl:(NSString * )url;
+## + startWithAppId:withUrl:
 
 初始化方法
 
-### Usage:
+**Usage:**
 
  ```objective-c
  [ThinkingAnalyticsSDK startWithAppId:@"YOUR_APPID" 
@@ -20,17 +20,17 @@ iOS SDK Full API Reference
 | appId | NSString | APP ID |
 | url | NSString | 接收端地址 |
 
-#### Returns:
+**Returns:**
 
 | Type | Description |
 | ----- | ------------- |
 | ThinkingAnalyticsSDK | SDK 实例 |
 
-## - (void)track:(NSString * )event;
+## - track:
 
 自定义事件埋点
 
-### Usage:
+**Usage:**
 
  ```objective-c
  [[ThinkingAnalyticsSDK sharedInstance] track:@"some_event"];
@@ -43,11 +43,11 @@ iOS SDK Full API Reference
 ---
 # TDConfig
 
-## - (instancetype)initWithAppId:(NSString * )appId serverUrl:(NSString * )serverUrl;
+## - initWithAppId:serverUrl:
 
 初始化方法
 
-### Usage:
+**Usage:**
 
  ```objective-c
  TDConfig *config = [[TDConfig alloc] initWithAppid:APPID 
@@ -60,7 +60,7 @@ iOS SDK Full API Reference
 | appId | NSString | APP ID |
 | serverUrl | NSString | 接收端地址 |
 
-#### Returns:
+**Returns:**
 
 | Type | Description |
 | ----- | ------------- |
